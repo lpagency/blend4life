@@ -78,6 +78,11 @@ font-size: 23px !important;
     left: 76%;
 }
 
+.btn-store{
+    border: 1px solid #ccc;
+    color: #777;
+}
+
 img.editablelink.fri {
     position: absolute;
     left: 444px !important;
