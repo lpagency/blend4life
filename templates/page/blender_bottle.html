@@ -37,7 +37,7 @@ s{% extends "../base.html" %}
         //     'https://pay.loadingplay.com',
         //     'http://pay.loadingplay.com',
         //     'https://pay.loadingplay.com');
-        // var app_public = $.environmentVar(20,20,20);
+        // var app_public = $.environmentVar('blend','blend','blend');
         // var config = {
         //     'app_public' : app_public,
         //     'base_url' : base_url,
@@ -62,7 +62,7 @@ s{% extends "../base.html" %}
         //     'products_per_page' : 9
         // });
 
-        
+
 
         // destacado categoria 2
         // config.tag = 'destacado_categoria2';
@@ -71,7 +71,7 @@ s{% extends "../base.html" %}
 </script>
 
 <script type="text/javascript">
-    $(document).ready(function() 
+    $(document).ready(function()
 {
    $('.carousel').carousel({
   interval: 1000 * 9
@@ -83,7 +83,7 @@ s{% extends "../base.html" %}
 <script type="text/javascript">
     $(document).ready(function()
     {
-    //   
+    //
     $(document).on("click", ".subcateg", function(ev){
         // ev.preventDefault();
 
@@ -138,7 +138,7 @@ s{% extends "../base.html" %}
     </ol> -->
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner dos" role="listbox">    
+    <div class="carousel-inner dos" role="listbox">
       <div class="item active" style="background:url('{{ read_image(site.name + '_img_blender',500) }}'); height:480px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center; box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3);" data-img-width="1600" data-img-height="890" data-diff="100">
 
           {% if is_admin %}
@@ -152,11 +152,11 @@ s{% extends "../base.html" %}
 
               <div align="center">
                   <div class="lis-pro text-center {{editabletext}}" text-id="{{ site.name + '_blender' }}"> {{ read_text(site.name +  '_blender') }} </div>
-            
+
               </div>
       </div>
 
-     
+
 
 
 <!-- **otro** -->
@@ -172,12 +172,12 @@ s{% extends "../base.html" %}
 
             <div align="center">
                   <div class="lis-pro text-center {{editabletext}}" text-id="{{ site.name + '_blender_2' }}"> {{ read_text(site.name +  '_blender_2') }} </div>
-             </div> 
+             </div>
       <!--   <img class="img_banner" id="{{ site.name }}_img_slider_2" src="{{ read_image(site.name + '_img_slider_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_slider_2',500) }}'" alt="item" style=" "> -->
 
    <!--        <img src="{{ read_image(site.name + '_slide2', 500) }}" alt="Slide 2" longdesc="{{ read_image(site.name + '_slide2', 500) }}" /> -->
       </div>
-    
+
       <div class="mov item " style="background:url('{{ read_image(site.name + '_img_blender_3',500) }}'); height:480px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center; box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3);" data-img-width="1600" data-img-height="890" data-diff="100">
          {% if is_admin %}
             <div class="image-upload ge visible-movil">
@@ -186,13 +186,13 @@ s{% extends "../base.html" %}
                </label>
                <input type="file" class="editableimage" image-id="{{ site.name }}_img_blender_3" name="image" id="img_blender_3" >
            </div>
-          
+
            {% end %}
 
               <div align="center">
                   <div class="lis-pro text-center {{editabletext}}" text-id="{{ site.name + '_blender_3' }}"> {{ read_text(site.name +  '_blender_3') }} </div>
 
-             </div> 
+             </div>
         <!-- <img class="img_banner" id="{{ site.name }}_img_slider_3" src="{{ read_image(site.name + '_img_slider_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_slider_3',500) }}'" alt="item" style=" "> -->
      <!--      <img src="{{ read_image(site.name + '_slide3', 500) }}" alt="Slide 3" longdesc="{{ read_image(site.name + '_slide3', 500) }}" /> -->
       </div>
@@ -205,13 +205,13 @@ s{% extends "../base.html" %}
                </label>
                <input type="file" class="editableimage" image-id="{{ site.name }}_img_blender_4" name="image" id="img_blender_4" >
            </div>
-        
+
            {% end %}
 
                <div align="center">
                   <div class="lis-pro text-center {{editabletext}}" text-id="{{ site.name + '_blender_4' }}"> {{ read_text(site.name +  '_blender_4') }} </div>
 
-             </div> 
+             </div>
         <!-- <img class="img_banner" id="{{ site.name }}_img_slider_4" src="{{ read_image(site.name + '_img_slider_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_slider_4',500) }}'" alt="item" style=" "> -->
       <!--   <img src="{{ read_image(site.name + '_slide4', 500) }}" alt="Slide 4" longdesc="{{ read_image(site.name + '_slide4', 500) }}" /> -->
         </div>
@@ -241,7 +241,7 @@ s{% extends "../base.html" %}
                 <h1 class="text-center jic {{editabletext}}" text-id="{{ site.name + '_pron_blen' }}"> {{ read_text(site.name +  '_pron_blen') }}</h1>
               </div>
             </div>
-        </div> 
+        </div>
 
         <section class="h_submenu">
         <div align="center">
@@ -256,7 +256,7 @@ s{% extends "../base.html" %}
         </section>
 
     <div class="container">
-           <div align="center" class="to"> 
+           <div align="center" class="to">
               <div class="products">
                   <div class="spinner">
                     <div class="rect1"></div>
@@ -269,13 +269,13 @@ s{% extends "../base.html" %}
             <div class="col-xs-12">
               <button type="button" class="btn btn-default more-products" style="display: none">MÁS PRODUCTOS</button>
             </div>
-          </div> 
+          </div>
 
     </div>
 </section>
 
 <section>
- 
+
  <div class="container">
        <div class="col-xs-12 col-md-4 box-4">
          {% if is_admin %}
@@ -286,9 +286,9 @@ s{% extends "../base.html" %}
                    <input type="file" class="editableimage" image-id="{{ site.name }}_box_blender" name="image" id="img_box_blender" >
                </div>
         {% end %}
-               
+
                <img id="{{ site.name }}_box_blender" src="{{ read_image(site.name + '_box_blender', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_blender',500) }}'" class="img-uno" alt="item">
-            
+
                {% if is_admin %}
                   <img class="change-image editablelink" link-id="{{ site.name + '_box_blender' }}" content="{{ read_link(site.name + '_box_blender') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
                 {% end %}
@@ -313,9 +313,9 @@ s{% extends "../base.html" %}
                    <input type="file" class="editableimage" image-id="{{ site.name }}_box_blender_2" name="image" id="img_box_blender_2" >
                </div>
         {% end %}
-              
+
                <img id="{{ site.name }}_box_blender_2" src="{{ read_image(site.name + '_box_blender_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_blender_2',500) }}'" class="img-dos" alt="item">
-      
+
 
                {% if is_admin %}
                   <img class="change-image editablelink" link-id="{{ site.name + '_box_blender_2' }}" content="{{ read_link(site.name + '_box_blender_2') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
@@ -338,9 +338,9 @@ s{% extends "../base.html" %}
                    <input type="file" class="editableimage" image-id="{{ site.name }}_box_blender_3" name="image" id="img_box_blender_3" >
                </div>
         {% end %}
-               
+
                <img id="{{ site.name }}_box_blender_3" src="{{ read_image(site.name + '_box_blender_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_blender_3',500) }}'" class="img-tres" alt="item">
-             
+
 
                {% if is_admin %}
                   <img class="change-image editablelink" link-id="{{ site.name + '_box_blender_3' }}" content="{{ read_link(site.name + '_box_blender_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
@@ -366,10 +366,10 @@ s{% extends "../base.html" %}
                    <input type="file" class="editableimage" image-id="{{ site.name }}_box_blender_4" name="image" id="img_box_blender_4" >
                </div>
         {% end %}
-               
-            
+
+
                <img id="{{ site.name }}_box_blender_4" src="{{ read_image(site.name + '_box_blender_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_blender_4',500) }}'" class="img-uno" alt="item">
-        
+
          <!--  <img class="img-cuatro" src="https://84static.loadingplay.com/static/images/681957094d62655f8d15c78538438d7b_ws_Blue_Flowers_852x480.png" > -->
 
               {% if is_admin %}
@@ -382,9 +382,9 @@ s{% extends "../base.html" %}
         </div>
    </a>
        </div>
-       
+
 </div>
-      
+
 </section>
 
 <div class="clearfix-fun"></div>
